@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INS-cL-AbH">
+                                <rect key="frame" x="157" y="248" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="mQI-dx-lrG"/>
+                                    <constraint firstAttribute="width" constant="100" id="x4W-Bb-jd7"/>
+                                </constraints>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="didClickStartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4g-Zm-3qe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnS-Ot-IbE">
+                                <rect key="frame" x="184.5" y="448" width="45" height="30"/>
+                                <state key="normal" title="cancel"/>
+                                <connections>
+                                    <action selector="didClickCancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIX-WX-i2u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rnS-Ot-IbE" firstAttribute="height" secondItem="INS-cL-AbH" secondAttribute="height" multiplier="0.3" id="5q4-Pd-71k"/>
+                            <constraint firstItem="rnS-Ot-IbE" firstAttribute="width" secondItem="INS-cL-AbH" secondAttribute="width" multiplier="0.45" id="BG5-qj-MsS"/>
+                            <constraint firstItem="INS-cL-AbH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-150" id="BW8-Ek-zBa"/>
+                            <constraint firstItem="rnS-Ot-IbE" firstAttribute="centerX" secondItem="INS-cL-AbH" secondAttribute="centerX" id="I35-pg-iB3"/>
+                            <constraint firstItem="rnS-Ot-IbE" firstAttribute="top" secondItem="INS-cL-AbH" secondAttribute="bottom" constant="100" id="azF-bN-TYc"/>
+                            <constraint firstItem="INS-cL-AbH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uWC-Q8-k8t"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="101.78571428571428"/>
+        </scene>
+    </scenes>
+</document>
